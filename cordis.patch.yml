@@ -1,0 +1,7 @@
+# SpinDoctor Qwerty 1.1.0 - DeepSeek Harness bundle layer (dsh.bundle.patch)
+# Copyright (C) 2026 RUSSELL PHILIP SMITHSON <russellsmithson77@outlook.com>
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Inserts one plugin row; `name` is this package's name so Node resolution finds the installed (or linked) code.
+- insert:
+    - id: spindoctor-qwerty
+      name: dsh-spindoctor-qwerty

@@ -1,0 +1,62 @@
+{
+  "name": "dsh-spindoctor-qwerty",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "DeepSeek Harness (dsh) bundle for the SpinDoctor 3.1.2 quantum-circuit SIMULATOR: six tools (q.* scripts with 1-298 logical qubits, 241 presets, q.folder, function table, theory testing) with TXT/PDF/JSON/CSV reports. Classical FP64 simulation, not a quantum computer.",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-bundle",
+    "cordis",
+    "quantum",
+    "quantum-circuit",
+    "simulator",
+    "spindoctor",
+    "qwerty"
+  ],
+  "homepage": "https://github.com/LKVexa/spindoctor-qwerty-deepseek-harness",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LKVexa/spindoctor-qwerty-deepseek-harness.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LKVexa/spindoctor-qwerty-deepseek-harness/issues"
+  },
+  "license": "GPL-3.0-or-later",
+  "author": {
+    "name": "RUSSELL PHILIP SMITHSON",
+    "email": "russellsmithson77@outlook.com",
+    "url": "https://github.com/LKVexa"
+  },
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "engine/",
+    "FUNCTIONS.md",
+    "README.md",
+    "LICENSE",
+    "NOTICE",
+    "COPYRIGHT"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tools": ">=0.2.0-rc.2"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/dsh-tools": {
+      "optional": true
+    }
+  }
+}
